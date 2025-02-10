@@ -1,24 +1,24 @@
-#  High-Performance Document Processing
+# 📄 High-Performance Document Processing
 
-## Overview
-This Colab Notebook is designed to efficiently process large PDF documents (100+ pages) using **parallel processing** and **memory-efficient techniques**. It also integrates a **LLM-based QA system**, allowing users to extract insights from the document with citations.
+## 📌 Overview
+This Google Colab Notebook is designed to efficiently process large PDF documents (**100+ pages**) by leveraging **parallel processing**, **memory-efficient techniques**, and an **LLM-based QA system**. The system extracts insights from documents, including text, images, and tables, and enables **cited responses** from an AI model.
 
-## Features
+## 🚀 Key Features
 - **Efficient PDF Processing**: Extracts text, images, and tables from PDFs.
-- **Parallel Execution**: Uses async/multiprocessing for rapid data extraction.
+- **Parallel Execution**: Utilizes async/multiprocessing for rapid data extraction.
 - **Memory Optimization**: Ensures low GPU/CPU usage.
-- **LLM Integration**: Uses `Llama-2-7b-chat-hf` model for answering queries.
-- **Vector-Based Retrieval**: FAISS-powered document indexing for fast lookups.
+- **LLM Integration**: Uses `Llama-2-7b-chat-hf` for intelligent responses.
+- **Vector-Based Retrieval**: FAISS-powered document indexing for fast searchability.
 
-## Installation & Setup
-### **1. Open the Colab Notebook**
-Click the link to open the notebook in Google Colab.
+## 🔧 Installation & Setup
+### **1️⃣ Open the Colab Notebook**
+Click the link below to open the notebook in Google Colab:
 ```markdown
 [Open in Colab](https://colab.research.google.com/drive/11vu5mSVX62l8Ww34WrFXPtRYJBnr6MUk#scrollTo=7W-ALxhrz9bK)
 ```
 
-### **2. Install Dependencies**
-Run the following commands in Colab:
+### **2️⃣ Install Dependencies**
+Run the following commands in the Colab notebook to install necessary packages:
 ```python
 !pip install transformers==4.31.0 tokenizers==0.13.3
 !pip install einops==0.6.1 xformers==0.0.22.post7
@@ -28,40 +28,45 @@ Run the following commands in Colab:
 !pip install bitsandbytes pymupdf
 ```
 
-### **3. Upload Your PDF File**
-Execute the following cell in Colab to upload a PDF:
+### **3️⃣ Upload Your PDF File**
+Execute the following cell to upload a PDF:
 ```python
 from google.colab import files
 uploaded = files.upload()
 ```
 
-### **4. Run the Processing Pipeline**
+### **4️⃣ Run the Processing Pipeline**
 Once the file is uploaded, run the notebook cells to:
 - Extract text, tables, and images.
 - Convert content into a **vector-based FAISS store**.
 - Use LLM to answer questions based on the extracted content.
 
-## How to Query the LLM
-After processing, you can ask questions from the PDF:
+## 🔎 Querying the LLM
+After processing, you can ask questions about the document:
 ```python
 query = "What is the main topic of the document?"
 response = chain({"question": query, "chat_history": chat_history})
 print("Answer:", response['answer'])
 ```
 
-## Performance Goals
+## 📊 Performance Benchmarks
 | Metric               | Target Value  | Achieved Value |
 |----------------------|--------------|---------------|
 | Processing Speed    | <30s for 100 pages | XXs |
 | Memory Usage       | <1GB | XX MB |
 | Extraction Accuracy | >95% | XX% |
 
-## Output
-- Extracted text is stored in a structured format.
-- Images are saved separately and displayed.
-- Tables are converted into DataFrames.
-- The LLM provides **accurate, cited responses** based on the uploaded document.
+## 📤 Output Format
+- **Extracted text** is stored in a structured format.
+- **Images** are saved separately and displayed.
+- **Tables** are converted into **Pandas DataFrames**.
+- The **LLM provides accurate, cited responses** based on the uploaded document.
 
+## 📌 Future Enhancements
+- **OCR Integration** for scanned PDFs.
+- **Table-to-CSV conversion** for structured data analysis.
+- **Fine-tuned LLM models** for improved document-based Q&A.
 
-### **Developed by: Mohit Anand**
+---
+### ✍️ Developed by: Mohit Anand
 
