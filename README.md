@@ -3,6 +3,10 @@
 ## 📌 Overview
 This Google Colab Notebook is designed to efficiently process large PDF documents (**100+ pages**) by leveraging **parallel processing**, **memory-efficient techniques**, and an **LLM-based QA system**. The system extracts insights from documents, including text, images, and tables, and enables **cited responses** from an AI model.
 
+## Video Demeonstration
+
+The link for the demonstration of code is  loom.com/share/072779c34a00404ab1f76bca1cee4244
+
 ## 🚀 Key Features
 - **Efficient PDF Processing**: Extracts text, images, and tables from PDFs.
 - **Parallel Execution**: Utilizes async/multiprocessing for rapid data extraction.
