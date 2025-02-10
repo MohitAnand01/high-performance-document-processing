@@ -14,7 +14,7 @@ This Colab Notebook is designed to efficiently process large PDF documents (100+
 ### **1. Open the Colab Notebook**
 Click the link to open the notebook in Google Colab.
 ```markdown
-[Open in Colab](https://colab.research.google.com/)
+[Open in Colab](https://colab.research.google.com/drive/11vu5mSVX62l8Ww34WrFXPtRYJBnr6MUk#scrollTo=7W-ALxhrz9bK)
 ```
 
 ### **2. Install Dependencies**
