@@ -5,7 +5,7 @@ This Google Colab Notebook is designed to efficiently process large PDF document
 
 ## Video Demeonstration
 
-The link for the demonstration of code is  https://www.loom.com/share/072779c34a00404ab1f76bca1cee4244
+The Video demonstration of code is  https://www.loom.com/share/072779c34a00404ab1f76bca1cee4244
 
 ## 🚀 Key Features
 - **Efficient PDF Processing**: Extracts text, images, and tables from PDFs.
